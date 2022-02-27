@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
+  <title>EE UR</title>
+</head>
+
+<body>
+  <video id="player" hidden playsinline controls>
+  </video>
+
+  <div id="file-input-container" class="wrapped-input">
+    <label class="fullscreen flex-center pointer file-selector dropable" for="file-input">Select a file</label>
+    <input type="file" accept="video/*" id="file-input" />
+  </div>
+
+  <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
